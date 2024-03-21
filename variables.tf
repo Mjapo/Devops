@@ -1,2 +1,14 @@
+variable "location" {
+  type = string
+  default = "westeurope"
+}
 
-// colocar sempre por covencao 001/ 002 / para enumerar 
+variable "tags" {
+  type = map
+  default = {
+      "Ambiente" = "Desenvolvimento"
+      "Integracao" = "Processo Devops"
+      "Compania" = "Aula Devops"
+      "Area" = "Marketing"
+    }
+}
